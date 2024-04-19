@@ -1,0 +1,12 @@
+{
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "Le modpack de Crabe !!!",
+      "name" : "CrabeCreate",
+      "version" : "2024-04-19-15-52-59",
+      "location" : "crabecreate.json",
+      "priority" : 1
+    }
+  ]
+}
