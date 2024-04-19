@@ -1,0 +1,192 @@
+{
+  "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
+  "_SOURCE": "https://gitlab.com/CDAGaming/CraftPresence",
+  "_schemaVersion": 6,
+  "_lastMCVersionId": 763,
+  "generalSettings": {
+    "detectATLauncherInstance": true,
+    "detectCurseManifest": true,
+    "detectMultiMCManifest": true,
+    "detectMCUpdaterInstance": true,
+    "detectTechnicPack": true,
+    "detectModrinthPack": true,
+    "detectBiomeData": true,
+    "detectDimensionData": true,
+    "detectWorldData": true,
+    "clientId": "450485984333660181",
+    "defaultIcon": "grass",
+    "enableJoinRequests": false,
+    "partyPrivacyLevel": 1,
+    "preferredClientLevel": 3,
+    "resetTimeOnInit": false,
+    "autoRegister": false
+  },
+  "biomeSettings": {
+    "fallbackBiomeIcon": "inconnu",
+    "biomeData": {
+      "default": {
+        "textOverride": "En train de jouer dans {biome.name}"
+      }
+    }
+  },
+  "dimensionSettings": {
+    "fallbackDimensionIcon": "inconnu",
+    "dimensionData": {
+      "default": {
+        "textOverride": "Dans la dimension {dimension.name}"
+      }
+    }
+  },
+  "serverSettings": {
+    "fallbackServerIcon": "défaut",
+    "fallbackServerName": "Serveur Minecraft",
+    "fallbackServerMotd": "Un Serveur Minecraft",
+    "serverData": {
+      "default": {
+        "textOverride": "En train de jouer sur {server.motd.raw}"
+      }
+    }
+  },
+  "statusMessages": {
+    "mainMenuData": {
+      "textOverride": "Dans le Menu Principal"
+    },
+    "loadingData": {
+      "textOverride": "Chargement..."
+    },
+    "lanData": {
+      "textOverride": "En train de jouer sur un Serveur LAN"
+    },
+    "singleplayerData": {
+      "textOverride": "En train de jouer en mode Solo"
+    }
+  },
+  "advancedSettings": {
+    "enablePerGui": false,
+    "enablePerItem": false,
+    "enablePerEntity": false,
+    "formatWords": true,
+    "debugMode": false,
+    "verboseMode": false,
+    "refreshRate": 2,
+    "allowPlaceholderPreviews": false,
+    "guiSettings": {
+      "fallbackGuiIcon": "inconnu",
+      "guiData": {
+        "default": {
+          "textOverride": "Dans {screen.name}"
+        }
+      }
+    },
+    "itemMessages": {
+      "default": "Tenant {item.message.holding}"
+    },
+    "entitySettings": {
+      "fallbackEntityIcon": "inconnu",
+      "targetData": {
+        "default": {
+          "textOverride": "Ciblage {entity.target.name}"
+        }
+      },
+      "ridingData": {
+        "default": {
+          "textOverride": "Monte {entity.riding.name}"
+        }
+      }
+    },
+    "allowEndpointIcons": true,
+    "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
+    "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
+    "allowDuplicatePackets": false,
+    "maxConnectionAttempts": 10
+  },
+  "accessibilitySettings": {
+    "tooltipBackground": {
+      "start": {
+        "red": 16,
+        "green": 0,
+        "blue": 16,
+        "alpha": 240
+      }
+    },
+    "tooltipBorder": {
+      "start": {
+        "red": 80,
+        "green": 0,
+        "blue": 255,
+        "alpha": 80
+      },
+      "end": {
+        "red": 40,
+        "green": 0,
+        "blue": 127,
+        "alpha": 80
+      }
+    },
+    "guiBackground": {
+      "start": {
+        "red": 64,
+        "green": 64,
+        "blue": 64,
+        "alpha": 255
+      },
+      "texLocation": "minecraft:textures/gui/options_background.png"
+    },
+    "worldGuiBackground": {
+      "start": {
+        "red": 16,
+        "green": 16,
+        "blue": 16,
+        "alpha": 192
+      },
+      "end": {
+        "red": 16,
+        "green": 16,
+        "blue": 16,
+        "alpha": 208
+      }
+    },
+    "languageId": "en_us",
+    "stripTranslationColors": false,
+    "stripExtraGuiElements": false,
+    "renderTooltips": true,
+    "configKeyCode": 96
+  },
+  "displaySettings": {
+    "presenceData": {
+      "enabled": true,
+      "useAsMain": false,
+      "details": "{getFirst(menu.message, dimension.message)}",
+      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
+      "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
+      "largeImageText": "{getFirst(menu.message, dimension.message)}",
+      "smallImageKey": "{getFirst(server.icon, pack.icon)}",
+      "smallImageText": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
+      "startTimestamp": "{data.general.time}",
+      "endTimestamp": "",
+      "buttons": {
+        "default": {
+          "label": "Exemple de texte",
+          "url": "https://google.com"
+        }
+      }
+    },
+    "dynamicIcons": {
+      "Crabe_Crabe": "https://mc-heads.net/avatar/66290d3315ff4b5aae5df9dbb3a93326",
+      "gm26-dc02.ouiheberg.com": "https://api.mcsrvstat.us/icon/gm26-dc02.ouiheberg.com",
+      "default": "https://via.placeholder.com/256.png"
+    },
+    "dynamicVariables": {
+      "default": "Exemple de texte",
+      "mods": "{general.mods} Mod(s)",
+      "player_info_coordinate": "À {player.position.x}, {player.position.z}",
+      "players": "{server.players.current} / {server.players.max} Joueurs",
+      "player_info_in": "({custom.player_info.health})",
+      "player_info_items": "Objets : {item.main_hand.message}",
+      "player_info_out": "En tant que {player.name}",
+      "player_info_health": "Santé : {player.health.current}/{player.health.max}",
+      "world_info": "Sur {world.name}",
+      "pack": "{pack.name}"
+    }
+  }
+}
