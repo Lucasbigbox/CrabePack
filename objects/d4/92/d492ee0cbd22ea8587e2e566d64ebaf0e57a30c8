@@ -1,0 +1,7 @@
+onEvent('recipes', event => {
+  event.recipes.create.splashing(['minecraft:gravel', Fluid.of('minecraft:water')], function(splashing) {
+    var ironNuggetsCount = Math.floor(Math.random() * (9 - 5 + 1)) + 5;
+    splashing.output(Item.of('minecraft:iron_nugget').withChance(0.25), ironNuggetsCount);
+    splashing.output(Item.of('minecraft:flint').withChance(0.25));
+  });
+});
