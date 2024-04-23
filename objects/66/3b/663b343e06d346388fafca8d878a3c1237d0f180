@@ -1,0 +1,11 @@
+ServerEvents.recipes(e => {
+  // Définir la recette d'éclaboussure pour le gravier avec de l'eau
+  e.recipes.create.splashing(['minecraft:gravel', Fluid.of('minecraft:water')], function(splashing) {
+    // Générer un nombre aléatoire entre 5 et 9 pour les pépites de fer
+    var ironNuggetsCount = Math.floor(Math.random() * (9 - 5 + 1)) + 5;
+    // Ajouter le nombre aléatoire de pépites de fer à la sortie avec 25% de chance
+    splashing.output(Item.of('minecraft:iron_nugget').withChance(0.25), ironNuggetsCount);
+    // Ajouter 1 silex à la sortie avec 25% de chance
+    splashing.output(Item.of('minecraft:flint').withChance(0.25));
+  });
+});
